@@ -23,7 +23,8 @@ public class Task1 {
 				System.out.println("I need a day off");
 			}else {
 				System.out.println("I do not need a day off any more");
-				workDay=false;
+//				workDay=false;//or this
+				break;//or this
 			}
 			day++;
 		}
