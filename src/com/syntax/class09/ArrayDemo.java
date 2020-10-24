@@ -30,17 +30,6 @@ public class ArrayDemo {
 		arrayString [2] = "Hi";
 		arrayString [3] = "Hola";
 		System.out.println(arrayString[3]);
-
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
 	}
 
 }
