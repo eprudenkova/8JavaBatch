@@ -1,0 +1,36 @@
+Final
+
+is a keyword in Java that can be used with class field and methods.
+If we have declared a class as final class then no other class can inherit our class.
+
+final public class DemoClass{
+int number;
+demoClass(int number){
+this.number=number;
+}
+void printNumber(){
+sout number;
+}
+}
+
+Public class ChildClass extends DemoClass{
+CE //cannot inherit from a final class
+}
+
+Benefits of final classes
+1)Privacy
+2)A<-B<-C<-D... if we have a long chain of classes which have a inheritance relationship
+and if we want to restrict this chain we can use the final keyword
+Why? because we may waste a lot memory if we do not use these classes properly
+
+
+4 Pillars of OOPs concept to support programming –
+abstraction, encapsulation, inheritance, and polymorphism.
+They are also known as four pillars of the object oriented programming paradigm.
+
+Abstraction
+it is a process of hiding implementation details and showing only important info to the user
+in java we have two types of Abstraction
+1) using the Absctract class
+2) Using the Interfaces
+in java so far we have implemented the methods the complete methods where we needed them.

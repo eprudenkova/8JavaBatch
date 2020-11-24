@@ -1,0 +1,36 @@
+1. Can we overload private method?
+yes
+how?
+
+class Test{
+private print(){
+sout"Hi";
+}
+private print(String s){
+sout"Hi"+s;
+}
+}
+
+2. Can we overload static method?
+yes
+how?
+
+class Test2{
+public static void print(){
+sout"Hi";
+}
+public static void print(int num){
+sout"Hi"+num;
+}
+}
+
+3. Can we overload main method?
+yes
+how?
+
+public static void main(String[] args) {
+double[] arr = new double [1];
+main(arr);
+}
+public static void main(double[] args) {
+}

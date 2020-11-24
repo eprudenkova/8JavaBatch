@@ -1,0 +1,82 @@
+Yet another type of variables:
+
+1. Local - A local variable in Java is a variable that's declared within the body of a method.
+Then you can use the variable only within that method. Other methods in the class aren't even aware
+that the variable exists. Local variables are not given initial default values.
+Any variables that is declared inside the methodor a block like while loop for loop if condition
+or inside or a constructor.
+
+Properties:
+1. we can not access it outside of the block
+2. as soon as wea re done with method that local variables are destroyed and memory RAM is freed and available
+to be use by other programs witch means they are veru officiant in managing the memory
+and that is why they are always recommended over instance variables.
+
+for example
+if(2>1){
+int x =10; //this var will not be accessible outside the {} of if condition, because of limited scope
+}
+x=20 CE
+
+2. Instance - an instance variable is a variable which is declared in a class but outside of constructors,
+methods, or blocks. Instance variables are created when an object is instantiated,
+and are accessible to all the constructors, methods, or blocks in the class.
+Access modifiers can be given to the instance variable.
+
+Properties:
+1. memory ia allocated inside RAM as soon as object of that class is created and it says
+in the memory unless we are done with the closing bracket
+2. they are highly discouraged because they are not officiant in handling memory (RAM).
+
+3. Static - they are declared outside of the methods, constructors and block of code with a static keyword
+
+Access modifiers - are just a keyword like private, public, protected that help us reduse
+visibility of our variables and methods
+so that no one else from other classes or packages can modify our data.
+
+1. private:
+if we use private access modifire with our variable or method that
+we can only access that variable from the same class
+
+class Account{
+private int balance;
+private void depositMoney(){
+if (boolean properChannel, int money){
+balance=balance+money;
+}
+}
+}
+
+class hacker{
+balance=1000000;//CE cannot access
+}
+
+default:
+this is not a keyword, it is a behavior which is assigned to the methods of properties automatically
+if we are not assigning any access modifier.
+
+package1
+class{
+String car;
+}
+
+package2
+class Family{
+car = "I will take you car, I am your brother";
+}
+
+if we do not specify any modifiers default behaviour will be assigned to our variables and methods
+and they will only be available within the same package.
+
+2. public
+if we declare our methods or instance variables we can access them from anywhere any package any class.
+
+package1
+public class{
+String car;
+}
+
+package2
+class Family{
+car = "I will take you car, I am a random guy";
+}

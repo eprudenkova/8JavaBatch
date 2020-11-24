@@ -30,7 +30,5 @@ public class Task {
         String sentence="Is it saturday? Is it raining? Do we have a Java Class today?";
         String[]array=sentence.split("/?");
         System.out.println(Arrays.toString(array));
-
-
     }
 }

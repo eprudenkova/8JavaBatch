@@ -1,0 +1,69 @@
+Overriding:
+What is overriding?
+overriding is a feature that allows a subclass or child class to provide
+a specific implementation of a method
+that is already provided by one of its superclasses or parent classes.
+
+class ParentClass{
+
+void print(){
+sout"I am a parent class";
+}
+double performCalculations(double a, double b){
+return a+b;
+}
+}
+
+class ChildClass extends ParentClass{
+
+void print(){
+sout"I am a child class";
+}
+double performCalculations(double a, double b){
+return a+b;
+}
+}
+
+class MainClass{
+public static void main(String[] args){
+ChildClass cc = new ChildClass();
+cc.print();//I am child class
+cc.performCalculations();//same as parent class
+}
+}
+
+RULES:
+1. There should be a inheritance relationship between the classes in witch we are overriding the methods.
+
+2. We CAN NOT override private methods and constructors and initializer blocks.
+Why? They do not participate in inheritance.
+
+3. We can not decrease the visibility of our methods.
+For example, if something is public in our parent class we CAN NOT make it default protected or private,
+but we CAN increase the visibility like if something is protected or default we can make it public.
+Why? Because it breaks our inheritance concept like we have something as public and
+if we try to make it private it will not be available to our child classes.
+
+4. We CAN NOT change the return type of the method being overridden.
+Why? Because it will effect the polymorphism.
+
+Polymorphism allows us to play with all of the subclasses within a
+few lines (loops for example) that requires all the overridden methods
+in the derived classes to return the SAME type. Otherwise we have to
+make exceptions for all the overridden methods in derived class.
+The kind of defeats the purpose OOP. Then there would be no use to create objects.
+We can basically go back to procedural programing and keep writing separate
+methods for everything we created.
+
+5. To override a method the name of the method in your child class must be same
+as the method in your parent class that you are trying to override.
+Why? Because this is one of the features through witch your java
+will identify which method to override
+
+6. To override a method the signature of the method should be same.
+
+Parent parent = new Parent();
+Parent parent = new Child();
+Child c = parent;
+
+

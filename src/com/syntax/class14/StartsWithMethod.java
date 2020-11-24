@@ -9,5 +9,7 @@ public class StartsWithMethod {
         System.out.println(var.startsWith("naybe"));//false
         System.out.println(var.startsWith("MAYBE"));//false
         System.out.println(var.startsWith("real"));//false
+        System.out.println(var.endsWith("real"));
+
     }
 }

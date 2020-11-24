@@ -23,7 +23,6 @@ public class HW {
         StringBuilder stringBuilder = new StringBuilder("Anna");
         System.out.println(stringBuilder.reverse());
 
-
         System.out.println();
 
         String str2 = "Have a good day";

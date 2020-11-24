@@ -1,0 +1,37 @@
+Super Keyword
+Super is keyword in java that we can use to access immediate parent class members like fields,
+methods and constructors.
+
+Method overloading:
+1) is a way of utilizing  methods with different parameters but same name
+2) allows a class to have more then one method having the same name, if their arguments are different.
+
+In Java we can distinguish different methods by method signature
+
+Method signature is a combination of method name and type of parameters that we are passing as an argument
+and the sequence of the parameters.
+
+We can create methods with same name if the parameters to our mthods have the below properties.
+1. Method should have different number of parameters
+
+print(){}
+print(String name){}
+print(String name, String address){}
+print(String name, String address, String phone){}
+
+2. We can overload methods if we provide different types of parameters
+
+print(){}
+print(String name){}
+print(int num){}
+print(double salary){}
+
+3. We can also overload our methods if we change the sequence of the parameters
+
+print(String name, int num, char grade){}
+print(char grade, String name, int num){}
+print(int num, char grade, String name){}
+
+Note:
+by changing the return type or the access modifiers we can not overload methods in Java
+we can not overload fields!

@@ -1,0 +1,24 @@
+Class:
+
+
+For example:
+we can have a Car class which can have properties and behaviours
+that can be used to build a specific model of car like Toyota/Honda etc
+
+class NameOfClass{
+String model;
+String make;
+String color;
+int year;
+
+void drive(){
+}
+void switchGear(){
+}
+void applyBreaks(){
+}
+void drift(){
+}
+}
+
+In a Class we can have fields, methods, constructors and initializer blocks.

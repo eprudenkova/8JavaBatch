@@ -1,0 +1,23 @@
+Methods in java:
+Method is a block of code in java that performs some action and it
+may or may not return some data collection of statements that are grouped together
+to perform an operation.
+
+Example:
+int add(int num1, int num2){
+return num1+num2;
+}
+
+Benefits:
+1)increases readability
+2)easy modification
+3) save memory
+4) better organization
+
+When should we use methods in iur code:
+if more than 3 lines of code ...
+
+How methods work?
+...
+
+We can call non-static methods by using the objects only

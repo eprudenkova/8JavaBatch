@@ -1,0 +1,31 @@
+Inheritance
+It is mechanism in java through which we can use the fields and methods
+from one class to other class w/o writing a single line of code / repeating the code from the class
+from which we are inheriting.
+
+Benefits:
+1. Cleaner more efficient code for memory and execution.
+2. Helps use reduce duplicate code
+3. Saves time
+4. Reusing the same code again
+
+Disadvatages:
+1. classes are tightly coupled changes in parent class effect child class
+
+Class Parent{
+int money;
+void print(){
+sout"Money ="+money;
+}
+}
+Class Child extends Parent{
+public static void main (String[] args){
+Child child = new Child();
+child.print();
+}
+}
+
+Super Keyword
+As we can use this keyword in java to refer to the current fields and methods we can user super
+keyword to access ..
+
