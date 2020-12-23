@@ -1,0 +1,87 @@
+Datatypes of variables: 8
+
+Types of variables: 3
+There are 3 types of variables in java.
+1.Local
+2.Instance
+3.Static
+
+Local -- created in the method, constructor or block of code.
+There are declared when we enter a block of code end are dstroyd as soon as we left or
+the block of code:
+while
+for loop
+if condition
+switch
+{}
+
+Important points:
+1.We can not use the access modifiers with local variables
+access modifiers: public, default, private, protected
+2. Local var are not initilized with default values
+They must be initilized before we can access them
+
+When to use local variables:
+we should always try to use local variables
+because they are destroyed as soon as execution left the block of code
+that way we can utilize this memory for other purpose.
+
+Instance variables.
+declared in a class but outside of constructors methods or blocks of code
+..
+
+Note:
+whenever we need to access something in multiple methods or constructors we should use
+instance variables but we should always write our logic in such a way to avoid instance variables
+because they stay in the memory as long as we reference to our object.
+
+Each object can have own value with instance var
+
+Important points:
+we can use access modifiers with instance variables i.e. Private, Default, Protected, Public.
+Instance var have default values for
+boolean -- false
+int -- 0
+double -- 0.0
+String -- null (reason -- String is class)
+Dog -- null (reason -- Dog is class)
+
+Whenever we create an obj of the class a separate memory location
+for instance var is declared and we can store different things in those location.
+
+Static
+variables are class variables they are declared outside of method constructor or block of code
+we use static keyword before specifying the type of variables.
+For static var only one memory location is declared in the static area
+for all of the objects same memory location is used. These values are same for all objects.
+
+When ii used?
+when we have something common for all objects
+when all the objects of the same class share a common info
+
+is independent of the objects
+
+What is difference between static and final variable in Java?
+Static means there is only one copy of the variable in memory shared by all instances of the class.
+The final keyword just means the value can't be changed.
+Without final, any object can change the value of the variable.
+
+Important
+1. static var are rarely used other than being declared as final
+2. static var are stored in the static memory area
+3. visibility is same as instance var
+4. Static fields and methods can be access by just specifying
+the name of the class and name of var or method
+5. in static var we define common val
+
+
+Java modifiers
+1) Access modifiers like private, default, protected public
+2) Non-access modofoiers like final abstract static synchronized
+
+Access modifiers:
+these can be used to control the visibility of our instance var
+
+
+
+

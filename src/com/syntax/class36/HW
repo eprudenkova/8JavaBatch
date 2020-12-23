@@ -1,0 +1,22 @@
+HW
+1
+Create 10 rows with below columns
+FirstName LastName Age Salary Hobby
+fill these rows with random info
+rad these rows check if the salary is greater than 100k
+if yes store that row in new file
+
+2
+Create a property file to store following configurations:
+browser=chrome
+url=https://facebook.com
+username
+password
+Read file and extract values of browser & url
+
+3
+read data, have gender field, separate men and women into seperate sheets
+
+
+
+

@@ -11,6 +11,7 @@ public class CreditCard {
     double balance;
 
     public CreditCard(double balance) {
+
         this.balance = balance;
     }
 
@@ -19,6 +20,7 @@ public class CreditCard {
     }
 
     public static void print() {
+
         System.out.println("parent...");//dopisat
     }
 
@@ -37,10 +39,12 @@ public class CreditCard {
 
 class Visa extends CreditCard {
     Visa(double balance) {
+
         super(balance);
     }
 
     public static void print() {
+
         System.out.println("I am overridden method in child class");
     }
 }

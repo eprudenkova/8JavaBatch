@@ -1,0 +1,22 @@
+Encapsulation:
+
+in java it is a mechanism for wrapping the data (variables) ans code acting on the data (methods)
+yogether as a single unit.
+
+class Person{
+
+private accountBalance;
+private password;
+
+public accessAccountBalance(String password){
+
+if.this.password.equals(password){
+sout("your account balance"+accountBalance);
+}
+
+public void setAccountBalance(String password, String securityQuestion){
+if(this.password.equals(password)&&this.securityQuestion.equals(securityQuestion)){
+this.accountBalance=accountBalance;
+}
+}
+}
