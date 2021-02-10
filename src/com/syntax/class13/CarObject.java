@@ -1,16 +1,19 @@
 package com.syntax.class13;
 
 public class CarObject {
-    public static void main(String[] args) {
-        //		build individual objects
+    public static void main(String[] args) {// main method for execute the code
+//        build individual objects
         CarClass car1 = new CarClass();// object of the Car type // car1 variable
+//        CarClass - type of variable
+//        car1 - variable
+//        now we have to assign properties to our car1 variable
         car1.numberOfDoors=4;
         car1.color="black";
         car1.size=4;
         car1.make="BMW";
         car1.model="i8";
 
-        CarClass car2 = new CarClass();// object of the Car type // car2 variable
+        CarClass car2 = new CarClass();// object of the CarClass type // car2 variable
         car2.numberOfDoors=2;
         car2.color="blue";
         car2.size=2;

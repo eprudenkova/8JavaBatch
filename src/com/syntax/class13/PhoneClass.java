@@ -4,13 +4,15 @@ public class PhoneClass {
     String brand;
     String color;
 
-    void call(int number){
-        System.out.println("Calling "+number);
+    void call(int phoneNumber) {
+        System.out.println("Calling " + phoneNumber);
     }
-    void text(){
-        System.out.println(brand +" sending the text");
+
+    void text(String textMessage) {
+        System.out.println(brand + " sending the text message "+textMessage);
     }
-    void pics (){
-        System.out.println(brand +" taking a picture");
+
+    void pics() {
+        System.out.println(brand + " taking a picture");
     }
 }

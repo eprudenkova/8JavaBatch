@@ -33,11 +33,13 @@ public class AccountObject {
             System.out.println("Invalid user name or password");
         }
 
-        double amountToTransfer=account2.amountToTransfer(16000);
+        double amountToTransfer=account2.transfer(100);
+
         if(amountToTransfer==0){
-            System.out.println("Unsufficient balance");
+            System.out.println("Insufficient balance");
         }else{
             System.out.println(amountToTransfer+" transferred");
+            System.out.println((account2.balance-amountToTransfer)+" new balance");
         }
     }
 }

@@ -1,0 +1,22 @@
+File handling ib Java
+what are files:
+Files are mechanism that help us store data permanently on our computer
+
+why we should use file instead of putting the data with code
+Every time when we need to make a change
+we do not need to redeploy and recompile the code
+
+Steps involved in the compiling and deploying the code:
+
+serves -> Computers that are up all the time they are same as our normal laptop/computer
+but with very good hardware.
+1. Developers develop the code on development serves performs unit testing deploy this code to QA servers.
+2. Testers test the app on the QA server.
+3. After QA is done they may deploy the code on Performance, security testing servers
+4. Deployment on Staging servers
+5. Deployment on UAT servers
+6. Deployment on Production servers
+
+To avoid all of these processes we create a configuration file andwe store the configuration in thr file
+this configuration file may contain
+Usernames passwords URLs to Databases other information for configuration

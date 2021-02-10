@@ -3,7 +3,7 @@ is a process of showing the functionality to the user and hiding the implementat
 
 We can achieve the abstraction in java in 2 ways:
 1)Abstract classes and other one is Interfaces
-Abstract ckasses can have abstract methods we can implement those abstract methods
+Abstract classes can have abstract methods we can implement those abstract methods
 in our child classes.
 Rules for follow:
 We can have as many abstract methods as we want in a class.

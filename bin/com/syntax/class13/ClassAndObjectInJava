@@ -1,0 +1,23 @@
+Class 13
+
+Class and Object in Java
+
+A class in Java is abstract.
+Class is same as a blueprint / template, using it we can create an object.
+For example, think of every object around you (table, chair, laptop) they are created using this
+concept that first we have design the template/blueprint.
+
+Car class
+  NumberOfDoors
+  Color
+  Size
+  Engine
+  Model
+  Make
+
+Car car1= new Car();
+  car1.NumberOfDoor = 4;
+  car1.Color = "blue";
+  car1.Size = "4 seats";
+  car1.Make = "Tesla";
+  car1.Model = "S P100D";
