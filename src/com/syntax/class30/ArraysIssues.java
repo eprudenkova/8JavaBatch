@@ -20,14 +20,15 @@ public class ArraysIssues {
 //        names[3] = "Davit"; Array index out of bound as the size of the array was 3
 //        we can not store more than 3 elements
 
-//        Arrays are fixed in size we have to provide the size of the array in advance
-//        before we can use it
+//        Arrays are fixed in size we have to provide the size of the array in advance before we can use it
 
-        System.out.println(names.length);
-        names = expandArray(names);
-        names[3] = "Davit";
-        System.out.println(names.length);
-        System.out.println(Arrays.toString(names));//Ali, Anna, Jack, null, null, null ...
+        System.out.println(names.length);//3
+        names = expandArray(names);//expand old Array
+        names[3] = "Davit";//add Davit
+        names[4] = "Marte";//add Davit
+        names[5] = "Mike";//add Davit
+        System.out.println(names.length);//6
+        System.out.println(Arrays.toString(names));//[Ali, Anna, Jack, Davit, null, null]
     }
 
 //        public static String[] expandArray(String [] oldArray){
@@ -35,7 +36,7 @@ public class ArraysIssues {
 //            newArray[0] = names[0];
 //            newArray[1] = names[1];
 //            newArray[2] = names[2];
-//            newArray [3] = "Danilo";
+//            newArray[3] = "Danilo";
 //            return newArray;
 //        }
 

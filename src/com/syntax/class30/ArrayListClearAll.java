@@ -11,7 +11,7 @@ public class ArrayListClearAll {
         stringArrayList.add("Eduard");
         stringArrayList.add("Daria");
         System.out.println(stringArrayList);//[Danilo, Asghar, Burju, Eduard, Daria]
-        stringArrayList.clear();//removes the total no of element from the collection
+        stringArrayList.clear();//removes the total number of elements from the collection
         System.out.println(stringArrayList);//[]
     }
 }
