@@ -13,37 +13,37 @@ public class ArrayClassDemo2 {
         doubleArrayList.add(152.00);
         doubleArrayList.add(189.00);
         doubleArrayList.add(185.00);
-        doubleArrayList.add(15.00);
+        doubleArrayList.add(15.90);//allows duplicate
+
         System.out.println("Before removing");
         System.out.println(doubleArrayList);
 
+        System.out.println("After removing");
+
+        Iterator<Double> iterator = doubleArrayList.iterator();
+        while (iterator.hasNext()) {
+            if (iterator.next() < 20) {
+                iterator.remove();
+            }
+        }
+        System.out.println(doubleArrayList);//[150.0, 152.0, 189.0, 185.0]
+
+
+//        RuntimeException because we are trying to perform 2 operations at the same time  on a data structure
 //        for (Double element : doubleArrayList) {
-//            if(element<20){
+//            if (element < 20) {
 //                doubleArrayList.remove(element);
 //            }
+//            System.out.println(doubleArrayList);
 //        }
 
-
-//        unexpected results or runtime exception
+//        Unexpected results or RuntimeException
+//        List is dynamic, that's why 15.90 will be at the index [0] after first iteration and removing 18.99
 //        for (int i = 0; i < doubleArrayList.size(); i++) {
-//            if (doubleArrayList.get(i) < 20) {
+//            if (doubleArrayList.get(i) < 20.0) {
 //                doubleArrayList.remove(doubleArrayList.get(i));
 //            }
 //        }
-
-//        Iterator<Double>iterator = doubleArrayList.iterator();
-//        while(iterator.hasNext()){
-//            System.out.println("Inside the loop");
-//            Double next = iterator.next();
-//            System.out.println("Double next = iterator.next(); "+next);
-//            Double next1 = iterator.next();
-//            System.out.println("Double next1 = iterator.next(); "+next1);
-//            if(next1<20){
-//                System.out.println("removing the element");
-//                iterator.remove();
-//            }
-//        }
-//        System.out.println("After removing <20");
-//        System.out.println(doubleArrayList);
+//        System.out.println(doubleArrayList);//[15.9, 150.0, 152.0, 189.0, 185.0]
     }
 }

@@ -22,5 +22,12 @@ public class ArrayListIteratorDemo {
         System.out.println("After iteration");
         System.out.println(doubleArrayList);
 //        System.out.println(iterator.next());//error bcs we do not have next element after remove
+
+        System.out.println("We can use Iterator only once");
+        Iterator<Double> iterator2 = doubleArrayList.iterator();
+        System.out.println(iterator2.next());
+//        System.out.println(iterator2.next());
+//        System.out.println(iterator2.next());
+
     }
 }

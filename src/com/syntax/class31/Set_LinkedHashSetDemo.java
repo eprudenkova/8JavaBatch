@@ -3,7 +3,7 @@ package com.syntax.class31;
 import java.util.LinkedHashSet;
 import java.util.Set;
 
-public class LinkedHashSetDemo {
+public class Set_LinkedHashSetDemo {
     public static void main(String[] args) {
         Set<String> linkedHashSet = new LinkedHashSet<>();
         linkedHashSet.add("Apple");
@@ -14,7 +14,7 @@ public class LinkedHashSetDemo {
         linkedHashSet.add("Avocado");
         linkedHashSet.add("Olive");
 
-        System.out.println(linkedHashSet);
+        System.out.println(linkedHashSet);// do NOT allow duplicates, save the order
 //        [Apple, Mango, Kiwi, Strawberry, Avocado, Olive]
 
     }

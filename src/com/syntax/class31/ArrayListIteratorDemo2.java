@@ -20,7 +20,7 @@ public class ArrayListIteratorDemo2 {
         System.out.println(iterator.hasNext());//true
         System.out.println(iterator.next());//150.00
         System.out.println(iterator.hasNext());//false
-//        System.out.println(iterator.next());
+//        System.out.println(iterator.next());//NoSuchElementException
 
 
 

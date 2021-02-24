@@ -12,11 +12,13 @@ public class LinkedListDemo2 {
         cities.add("Monrovia");
         cities.add("Brooklyn");
         cities.add("San Diego");
+
         System.out.println(cities);
+
         cities.addFirst("Istanbul");
         cities.addLast("Moscow");
         cities.add(3,"Index 3");
-        System.out.println(cities);
 
+        System.out.println(cities);
     }
 }

@@ -1,7 +1,5 @@
 package com.syntax.classReview17;
 
-import com.syntax.class31.TreeSetDemo;
-
 import java.util.*;
 
 public class ListsAndSetsDemo {

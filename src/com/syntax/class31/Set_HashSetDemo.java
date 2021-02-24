@@ -5,7 +5,7 @@ import java.util.LinkedHashSet;
 import java.util.Set;
 import java.util.TreeSet;
 
-public class HashSetDemo {
+public class Set_HashSetDemo {
     public static void main(String[] args) {
         Set<String> hashSet = new HashSet<>();
         hashSet.add("Apple");
@@ -16,7 +16,7 @@ public class HashSetDemo {
         hashSet.add("Avocado");
         hashSet.add("Olive");
 
-        System.out.println(hashSet);
+        System.out.println(hashSet);// do NOT allow duplicates, do NOT save the order
 //        [Olive, Apple, Kiwi, Strawberry, Mango, Avocado]
 
     }

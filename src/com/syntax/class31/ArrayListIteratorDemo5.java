@@ -12,6 +12,7 @@ public class ArrayListIteratorDemo5 {
         drinks.add("Soda");
         drinks.add("Vodka");
         drinks.add("Scotch");
+        drinks.add("Juce");
 
         System.out.println(drinks);
 
@@ -19,6 +20,7 @@ public class ArrayListIteratorDemo5 {
         while (iterator.hasNext()) {
             String next = iterator.next();
             if (next.equals("Scotch") || next.equals("Vodka")) {
+//          if (iterator.next().equals("Scotch") || iterator.next().equals("Vodka")) {//will NOT work this way iterator.next()
                 iterator.remove();
             }
         }
