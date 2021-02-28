@@ -5,6 +5,7 @@ import java.util.Map;
 
 public class MapDemo4 {
     public static void main(String[] args) {
+
         Map<Integer, String> stringMap = new HashMap<>();
 
         stringMap.put(111, "Sabeen loves PTI");

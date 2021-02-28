@@ -1,24 +1,23 @@
 Collections:
-is a framework in java having many different intrtfaces and classes that help us dealing with
+is a framework in java having many different interfaces and classes that help us dealing with
 different types of data.
 Collection is a group of objects represented as a single entity
-it is dynamic in nature can grow and shrink the size in runtime
+it is dynamic, can grow and shrink the size in runtime
 
 ArrayList is a class in the collection framework that can store the single objects
 Properties:
 1. Arrays can have duplicate objects
 2. Arrays keep the insertion order
-3. Best choice whenever we will be accessing the data
+3. Best choice when you are accessing and reading (not modifying) the data
 
 LinkedList:
 1. Arrays can have duplicate objects
 2. Arrays keep the insertion order
-3. Best choice whenever we will be modifying the data
+3. Best choice when you modifying the data
 
 Set:
 Set is a data structure that stores unique objects
-It represents the unordered set of elements which doesn’t allow us to store the duplicate items
-Unordered collection of objects in which duplicate values cannot be stored
+Set is an unordered collection of objects in which duplicate values cannot be stored
 
 Properties:
 1. can not store duplicate elements

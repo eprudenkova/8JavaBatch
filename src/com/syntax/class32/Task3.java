@@ -1,32 +1,34 @@
 package com.syntax.class32;
 
-import java.util.ArrayList;
-import java.util.LinkedHashSet;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
 
 public class Task3 {
     public static void main(String[] args) {
 
 //      How can you remove all duplicates from ArrayList?
 
-        List<String> aList = new ArrayList<>();
-        aList.add("John");
-        aList.add("Jane");
-        aList.add("James");
-        aList.add("Jasmine");
-        aList.add("Jane");
-        aList.add("James");
-//        aList.add("John");
-//        aList.add("John");
-//        aList.add("John");
-//        aList.add("John");
-//        aList.add("John");
+        List<String> arrayList = new ArrayList<>();
+        arrayList.add("E");
+        arrayList.add("D");
+        arrayList.add("C");
+        arrayList.add("B");
+        arrayList.add("A");
+        arrayList.add("A");
+        arrayList.add("A");
 
-        System.out.println(aList);
+        System.out.println(arrayList);//[E, D, C, B, A, A, A]
 
-        Set<String> removeDuplicate = new LinkedHashSet<>(aList);
-        aList = new ArrayList<>(removeDuplicate);
-        System.out.println(aList);
+        HashSet<String> removeDuplicateWithHashSet = new HashSet<>(arrayList);//this constructor has loop inside
+        System.out.println(removeDuplicateWithHashSet);//[A, B, C, D, E] order depends on the hash function
+
+        LinkedHashSet<String> removeDuplicateWithLinkedHashSet = new LinkedHashSet<>(arrayList);//this constructor has loop inside
+        System.out.println(removeDuplicateWithLinkedHashSet);//[E, D, C, B, A] keeps order
+
+        TreeSet<String> removeDuplicateWithTreeSet = new TreeSet<>(arrayList);//this constructor has loop inside
+        System.out.println(removeDuplicateWithTreeSet);//[A, B, C, D, E] ascending order
+
+//        back to the ArrayList but now duolicates are remove
+        arrayList = new ArrayList<>(removeDuplicateWithTreeSet);//this constructor has loop inside
+        System.out.println(arrayList);//[A, B, C, D, E]
     }
 }
