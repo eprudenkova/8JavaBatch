@@ -17,7 +17,7 @@ public class MapDemo2 {
         hashMap.put(555, "Daria");
         hashMap.put(666, "Jessor");
 
-        System.out.println(hashMap);
+        System.out.println("hashMap "+hashMap);
 //        {666=Jessor, 555=Daria, 444=Denis, 333=Maria, 222=Vladimir, 111=Jack}
 
 //      LinkedHashMap: It orders key elements based on the order
@@ -30,29 +30,38 @@ public class MapDemo2 {
         linkedHashMap.put("Daria",555);
         linkedHashMap.put("Jessor",666);
 
-        System.out.println(linkedHashMap);
-//        {Jack=111, Vladimir=222, Maria=333, Denis=444, Daria=555, Jessor=666}
+        System.out.println("linkedHashMap(key String) "+linkedHashMap);
+
+        Map<Integer, String> linkedHashMap2 = new LinkedHashMap<>();
+        linkedHashMap2.put(111,"Jack");
+        linkedHashMap2.put(222,"Vladimir");
+        linkedHashMap2.put(333,"Maria");
+        linkedHashMap2.put(444,"Denis");
+        linkedHashMap2.put(555,"Daria");
+        linkedHashMap2.put(666,"Jessor");
+
+        System.out.println("linkedHashMap(key Integer) "+linkedHashMap2);
 
 //      TreeMap: It orders its elements based on their key values;
 //      it is substantially slower than HashMap.
-        Map<String, Integer> treeMap = new TreeMap<>();
-        treeMap.put("Jack",111);
-        treeMap.put("Vladimir",222);
-        treeMap.put("Maria",333);
-        treeMap.put("Denis",444);
-        treeMap.put("Daria",555);
-        treeMap.put("Jessor",666);
+        Map<Integer, String> treeMap = new TreeMap<>();
+        treeMap.put(111,"Jack");
+        treeMap.put(555,"Daria");
+        treeMap.put(333,"Maria");
+        treeMap.put(222,"Vladimir");
+        treeMap.put(444,"Denis");
+        treeMap.put(666,"Jessor");
 
-        System.out.println(treeMap);
-//        {Daria=555, Denis=444, Jack=111, Jessor=666, Maria=333, Vladimir=222}
+        System.out.println("treeMap (key - Integer) "+treeMap);
 
-//        map.put(111,"Jack");
-//        map.put(111,"Vladimir");
-//        map.put(111,"Maria");
-//        map.put(111,"Denis");
-//        map.put(111,"Daria");
-//        map.put(111,"Jessor");
-//        System.out.println(map);//{111=Jessor}
+        Map<String, Integer> treeMap2 = new TreeMap<>();
+        treeMap2.put("Jack",111);
+        treeMap2.put("Vladimir",222);
+        treeMap2.put("Maria",333);
+        treeMap2.put("Denis",444);
+        treeMap2.put("Daria",555);
+        treeMap2.put("Jessor",666);
 
+        System.out.println("treeMap (key - String) "+treeMap2);
     }
 }

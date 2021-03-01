@@ -5,6 +5,7 @@ import java.util.concurrent.ConcurrentHashMap;
 
 public class MapDemo10 {
     public static void main(String[] args) {
+
         Map<String, Double> storeItems = new ConcurrentHashMap<>();
         storeItems.put("Milk", 3.20);
         storeItems.put("Bread", 0.99);

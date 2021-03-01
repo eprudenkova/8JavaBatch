@@ -13,4 +13,17 @@ public class HW {
 //    Print all keys and values from a country map using for each loop and iterator.
 //    Print all values from a country map using for each loop and iterator.
 
+//    Create a Map of BestBuy store.
+//    Place item id and item name into it.
+//    Example (1233819 Printer)
+//    Retrieve all keys and values from a mapBestBuy using entrySet()
+
+//    Create a Person Class...
+
+//    1..
+//    2..
+
+//    1..
+//    2..
+
 }

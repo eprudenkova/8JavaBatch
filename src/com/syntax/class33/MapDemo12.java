@@ -6,6 +6,7 @@ import java.util.Map;
 
 public class MapDemo12 {
     public static void main(String[] args) {
+
         Map<String, Double> storeItems = new LinkedHashMap<>();
         storeItems.put("Milk", 3.20);
         storeItems.put("Bread", 0.99);

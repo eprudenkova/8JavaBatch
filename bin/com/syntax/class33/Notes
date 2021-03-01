@@ -11,7 +11,7 @@ HashMap<Key,Value> map = new HashMap<>();
 key can be any object
 value can be any object
 
-Always use Iterator to remove
+Always use Iterator to remove the elements from Collections and Maps
 
-We can call all the methods on the Map except remove while inside the iterator.
+We can call all the methods on the Map EXCEPT remove.
 
