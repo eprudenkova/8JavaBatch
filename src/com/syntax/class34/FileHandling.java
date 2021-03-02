@@ -24,11 +24,14 @@ public class FileHandling {
 //        loading the data from file to java program
         properties.load(fileInputStream);
 
-//        getting the values
+//        getting the values (data it will always be in the form of String)
         String username = properties.getProperty("username");
         String password = properties.getProperty("password");
-        int phoneNumber = Integer.parseInt(properties.getProperty("phoneNumber"));
-        System.out.println(phoneNumber);
+        String phoneNumberString = properties.getProperty("phoneNumber");
+
+        int phoneNumberInt = Integer.parseInt(properties.getProperty("phoneNumber"));//data it will always be in the form of String
+        System.out.println(phoneNumberString);
+        System.out.println(phoneNumberInt);
 
         System.setProperty("webdriver.chrome.driver", "drivers/chromedriver");
         WebDriver driver = new ChromeDriver();

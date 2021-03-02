@@ -40,6 +40,8 @@ class Person {
     private int age;
     private double salary;
 
+    public Person(){}
+
     public Person(String name, String lastName, int age, double salary) {
         this.name = name;
         this.lastName = lastName;

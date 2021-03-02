@@ -22,8 +22,10 @@ public class HW4 {
         Iterator<Map.Entry<Integer,Person>> iterator = employeesMap.entrySet().iterator();
         while(iterator.hasNext()){
             Map.Entry<Integer,Person> nextEntry = iterator.next();
-            System.out.println("ID "+nextEntry.getKey());
-            nextEntry.getValue().printPersonDetails();
+            System.out.println(nextEntry);
+//            System.out.println("ID "+nextEntry.getKey());
+//            nextEntry.getValue().printPersonDetails();
+//            nextEntry.getValue().printDetailsFromToString();
         }
     }
 }
@@ -34,6 +36,8 @@ class Person{
     private int age;
     private double salary;
 
+    Person(){}
+
     Person(String name, String lastname, int age, double salary){
         this.name=name;
         this.lastname=lastname;
@@ -43,5 +47,19 @@ class Person{
 
     void printPersonDetails(){
         System.out.println("Employee: "+name+" "+lastname+" "+age+" $"+salary);
+    }
+
+    void printDetailsFromToString(){
+        System.out.println(toString());
+    }
+
+    @Override
+    public String toString() {
+        return "Person{" +
+                "name='" + name + '\'' +
+                ", lastname='" + lastname + '\'' +
+                ", age=" + age +
+                ", salary=" + salary +
+                '}';
     }
 }

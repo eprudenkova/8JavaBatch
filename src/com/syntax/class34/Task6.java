@@ -4,7 +4,6 @@ package com.syntax.class34;
 //    Write a logic to find sum of all integers
 
 import java.util.ArrayList;
-import java.util.Iterator;
 
 public class Task6 {
     public static void main(String[] args) {
